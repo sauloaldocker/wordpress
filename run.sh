@@ -7,7 +7,7 @@ docker stop wordpressmysql; docker rm wordpressmysql
 
 PASSWD=mylongandsecretpassword
 
-SRC=$HOME/data
+SRC=$HOME/data/docker
 SRC_SQL=$SRC/wordpress
 
 docker run --name wordpressmysql -e MYSQL_ROOT_PASSWORD=$PASSWD -v $SRC_SQL:/var/lib/mysql -p 127.0.1.1:3307:3306 -d mysql
