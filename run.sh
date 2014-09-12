@@ -14,6 +14,6 @@ docker run --name wordpressmysql -e MYSQL_ROOT_PASSWORD=$PASSWD -v $SRC_SQL:/var
 
 sleep 10
 
-docker run --name wordpress --link wordpressmysql:mysql -e MYSQL_ROOT_PASSWORD=$PASSWD -p 127.0.1.1:8080:80 -d wordpress
+docker run --name wordpress --link wordpressmysql:mysql -e MYSQL_ROOT_PASSWORD=$PASSWD -p 127.0.1.1:8088:80 -d wordpress
 
 #watch docker logs wordpress
