@@ -1,0 +1,10 @@
+PASSWD=mylongandsecretpassword
+
+SRC=$HOME/data/docker
+SRC_W=$SRC/wordpress
+SRC_SQL=$SRC_W/sql
+SRC_APP=$SRC_W/app
+#SRC_CONTENT=$SRC_W/content
+#SRC_ADMIN=$SRC_W/admin
+#SRC_CONF=$SRC_W/wp-config.php
+
